@@ -150,6 +150,6 @@ video.frame-media_right {
 /* Mobile styles */
 @media (max-width: 768px) {
   body{
-    min-height: 490vh;
+    min-height: 500vh;
   }
 }
