@@ -150,6 +150,15 @@ video.frame-media_right {
 /* Mobile styles */
 @media (max-width: 768px) {
   body{
-    min-height: 500vh;
+    min-height: 540vh;
+  }
+  #pc_reg{
+    display: none;
+  }
+}
+
+@media (min-width: 768px){
+  #mobile_reg{
+    display: none;
   }
 }
