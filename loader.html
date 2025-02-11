@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigmoid 2K25</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            perspective: 1000px;
+        }
+
+        .tech-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .tech-line {
+            position: absolute;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transform-style: preserve-3d;
+            animation: moveLine 8s linear infinite;
+        }
+
+        @keyframes moveLine {
+            0% {
+                transform: translateZ(-1000px) rotateX(60deg);
+                opacity: 0;
+            }
+            50% {
+                opacity: 0.5;
+            }
+            100% {
+                transform: translateZ(1000px) rotateX(60deg);
+                opacity: 0;
+            }
+        }
+
+        .grid {
+            position: fixed;
+            width: 200%;
+            height: 200%;
+            top: -50%;
+            left: -50%;
+            background: 
+                linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px) 0 0 / 50px 50px,
+                linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px) 0 0 / 50px 50px;
+            transform: rotateX(60deg);
+            animation: gridMove 20s linear infinite;
+        }
+
+        @keyframes gridMove {
+            0% {
+                transform: rotateX(60deg) translateY(0);
+            }
+            100% {
+                transform: rotateX(60deg) translateY(50px);
+            }
+        }
+
+        .loader-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+        }
+
+        .box {
+            width: 40px;
+            height: 40px;
+            background: #fff;
+            position: absolute;
+            top: -50px;
+            animation: fallDown 1.5s infinite;
+        }
+
+        @keyframes fallDown {
+            0% {
+                transform: translateY(-50px) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(180deg);
+                opacity: 0;
+            }
+        }
+
+        .content-container {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        .typewriter-container {
+            height: 30px;
+            margin-bottom: 1rem;
+        }
+
+        .typewriter {
+            font-size: 1rem;
+            font-weight: normal;
+            white-space: nowrap;
+            border-right: 2px solid #fff;
+            padding-right: 4px;
+            animation: blink 0.75s step-end infinite;
+            opacity: 0.7;
+        }
+
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+
+        .year-container {
+            position: relative;
+            margin: 2rem 0;
+        }
+
+        .year {
+            font-size: 4.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .progress-container {
+            width: 80%;
+            max-width: 400px;
+            background: #333;
+            height: 4px;
+            margin-top: 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            position: absolute;
+            height: 100%;
+            background: #fff;
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .year {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="tech-background">
+        <div class="grid"></div>
+    </div>
+    
+    <div class="loader-container">
+        <div class="box"></div>
+    </div>
+    
+    <div class="content-container">
+        <div class="typewriter-container">
+            <div class="typewriter"></div>
+        </div>
+        
+        <div class="year-container">
+            <div class="year">SIGMOID 2K25</div>
+        </div>
+
+        <div class="progress-container">
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+
+    <script>
+        // Create animated tech lines
+        const techBackground = document.querySelector('.tech-background');
+        function createLine() {
+            const line = document.createElement('div');
+            line.className = 'tech-line';
+            line.style.width = Math.random() * 100 + 200 + 'px';
+            line.style.height = '1px';
+            line.style.left = Math.random() * 100 + '%';
+            line.style.top = Math.random() * 100 + '%';
+            techBackground.appendChild(line);
+
+            // Remove line after animation
+            setTimeout(() => {
+                line.remove();
+            }, 8000);
+        }
+
+        // Create new lines periodically
+        setInterval(createLine, 500);
+
+        const words = [
+            "ARTIFICIAL INTELLIGENCE",
+            "MACHINE LEARNING",
+            "BLOCKCHAIN",
+            "QUANTUM COMPUTING",
+            "NEURAL NETWORKS",
+            "CLOUD COMPUTING",
+            "CYBERSECURITY",
+            "BIG DATA",
+            "VIRTUAL REALITY",
+            "AUTOMATION"
+        ];
+
+        const typewriter = document.querySelector('.typewriter');
+        const progressBar = document.querySelector('.progress-bar');
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        let progress = 0;
+
+        function type() {
+            const currentWord = words[wordIndex];
+            
+            if (isDeleting) {
+                typewriter.textContent = currentWord.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typewriter.textContent = currentWord.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            if (!isDeleting && charIndex === currentWord.length) {
+                setTimeout(() => isDeleting = true, 800);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                wordIndex = (wordIndex + 1) % words.length;
+            }
+
+            const typingSpeed = isDeleting ? 30 : 50;
+            setTimeout(type, typingSpeed);
+        }
+
+        function updateProgress() {
+            if (progress < 100) {
+                progress++;
+                progressBar.style.width = `${progress}%`;
+                setTimeout(updateProgress, 50);
+            } else {
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 500);
+            }
+        }
+
+        // Start animations
+        type();
+        updateProgress();
+
+        // Create multiple falling boxes
+        setInterval(() => {
+            const box = document.createElement('div');
+            box.className = 'box';
+            box.style.left = Math.random() * window.innerWidth + 'px';
+            document.querySelector('.loader-container').appendChild(box);
+            
+            setTimeout(() => {
+                box.remove();
+            }, 1500);
+        }, 300);
+    </script>
+</body>
+</html>

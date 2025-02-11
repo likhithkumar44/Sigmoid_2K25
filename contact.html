@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Sigmoid</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <style>
+        #contact-nav {
+            background-color: #484646;
+            opacity: 0.8;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <h1>Sigmoid</h1>
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="registration.html" class="nav-link">Register</a></li>
+            <li class="nav-item"><a href="accomidation.html" class="nav-link">Accommodation</a></li>
+            <li class="nav-item"><a href="events.html" class="nav-link">Events</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link active">Contact Us</a></li>
+            <li class="nav-item"><a href="techteam.html" class="nav-link">Our Team</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <section class="contact-hero">
+        <h1>Contact Us</h1>
+        <p>Reach out to us for any queries regarding the event</p>
+    </section>
+
+    <section class="contact-info">
+        <div class="contact-card" data-aos="fade-up">
+            <h3>Tech Team</h3>
+            <p class="first">Email: tech@sigmoid.com</p>
+            <p>Phone: +91 98765 43210</p>
+        </div>
+        <div class="contact-card" data-aos="fade-up" data-aos-delay="100">
+            <h3>Technical Events</h3>
+            <p class="first">Email: techevent@sigmoid.com</p>
+            <p>Phone: +91 91234 56789</p>
+        </div>
+        <div class="contact-card" data-aos="fade-up" data-aos-delay="200">
+            <h3>Non-Technical Events</h3>
+            <p class="first">Email: nontechevent@sigmoid.com</p>
+            <p>Phone: +91 99876 54321</p>
+        </div>
+        <div class="contact-card" data-aos="fade-up" data-aos-delay="300">
+            <h3>Accommodation</h3>
+            <p class="first">Email: accom@sigmoid.com</p>
+            <p>Phone: +91 97654 32109</p>
+        </div>
+        <div class="contact-card" data-aos="fade-up" data-aos-delay="400">
+            <h3>Helpdesk</h3>
+            <p class="first">Email: helpdesk@sigmoid.com</p>
+            <p>Phone: +91 98712 34567</p>
+        </div>
+    </section>
+
+    <!-- <section class="contact-form">
+        <h2>Send us a message</h2>
+        <form id="query-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </section> -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Initialize scroll animations
+    </script>
+    <script src="js/app.js" defer></script>
+    <script src="js/contact.js" defer></script>
+    <script src="js/navbar.js"></script>
+</body>
+
+</html>

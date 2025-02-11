@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events - Sigmoid</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/events.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <style>
+      #events-nav {
+        background-color: #484646;
+        opacity: 0.8;
+      }
+    </style>
+    <script src="js/app.js" defer></script>
+    <script src="js/events.js" defer></script>
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="navbar-brand">
+            <h1>Sigmoid</h1>
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="registration.html" class="nav-link">Register</a></li>
+            <li class="nav-item"><a href="accomidation.html" class="nav-link">Accommodation</a></li>
+            <li class="nav-item"><a href="events.html" class="nav-link active">Events</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
+            <li class="nav-item"><a href="techteam.html" class="nav-link">Our Team</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="events-container">
+      <section class="events-hero">
+        <h1>Sigmoid Events</h1>
+        <p>Explore our diverse range of events and competitions</p>
+      </section>
+
+      <div class="event-categories">
+        <button class="category-btn active" data-category="tech">
+          Technical Events
+        </button>
+        <button class="category-btn" data-category="nontech">
+          Non-Technical Events
+        </button>
+        <button class="category-btn" data-category="workshop" id="workshops">WorkShops</button>
+      </div>
+
+      <section id="tech" class="event-section active">
+        <h2>Technical Events</h2>
+        <div class="events-grid">
+          <div class="event-card">
+            <div class="event-image">
+              <img src="./images/4.jpg" alt="Hackathon" />
+            </div>
+            <div class="event-content">
+              <h3>Code Marathon</h3>
+              <p>24-hour hackathon to build innovative solutions</p>
+              <div class="event-details">
+                <span>Prize: ₹50,000</span>
+                <span>Team: 2-4 members</span>
+              </div>
+              <button class="register-btn">Register Now</button>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-image">
+              <img src="./images/3.jpg" alt="Coding" />
+            </div>
+            <div class="event-content">
+              <h3>Debug Master</h3>
+              <p>Find and fix bugs in complex code</p>
+              <div class="event-details">
+                <span>Prize: ₹30,000</span>
+                <span>Team: Individual</span>
+              </div>
+              <button class="register-btn">Register Now</button>
+            </div>
+          </div>
+        </div>
+
+
+          <!-- Add 4 more technical events similarly -->
+        
+
+        <div class="events-grid">
+            <div class="event-card">
+              <div class="event-image">
+                <img src="./images/4.jpg" alt="Hackathon" />
+              </div>
+              <div class="event-content">
+                <h3>Code Marathon</h3>
+                <p>24-hour hackathon to build innovative solutions</p>
+                <div class="event-details">
+                  <span>Prize: ₹50,000</span>
+                  <span>Team: 2-4 members</span>
+                </div>
+                <button class="register-btn">Register Now</button>
+              </div>
+            </div>
+            <div class="event-card">
+              <div class="event-image">
+                <img src="./images/3.jpg" alt="Coding" />
+              </div>
+              <div class="event-content">
+                <h3>Debug Master</h3>
+                <p>Find and fix bugs in complex code</p>
+                <div class="event-details">
+                  <span>Prize: ₹30,000</span>
+                  <span>Team: Individual</span>
+                </div>
+                <button class="register-btn">Register Now</button>
+              </div>
+            </div>
+
+
+      </section>
+
+      <section id="nontech" class="event-section">
+        <h2>Non-Technical Events</h2>
+        <div class="events-grid">
+            <div class="event-card">
+              <div class="event-image">
+                <img src="./images/4.jpg" alt="Hackathon" />
+              </div>
+              <div class="event-content">
+                <h3>Code Marathon</h3>
+                <p>24-hour hackathon to build innovative solutions</p>
+                <div class="event-details">
+                  <span>Prize: ₹50,000</span>
+                  <span>Team: 2-4 members</span>
+                </div>
+                <button class="register-btn">Register Now</button>
+              </div>
+            </div>
+            <div class="event-card">
+              <div class="event-image">
+                <img src="./images/3.jpg" alt="Coding" />
+              </div>
+              <div class="event-content">
+                <h3>Debug Master</h3>
+                <p>Find and fix bugs in complex code</p>
+                <div class="event-details">
+                  <span>Prize: ₹30,000</span>
+                  <span>Team: Individual</span>
+                </div>
+                <button class="register-btn">Register Now</button>
+              </div>
+            </div>
+        </div>
+
+
+          <!-- Add 5 more non-technical events similarly -->
+
+          <div class="events-grid">
+            <div class="event-card">
+              <div class="event-image">
+                <img src="./images/4.jpg" alt="Hackathon" />
+              </div>
+              <div class="event-content">
+                <h3>Code Marathon</h3>
+                <p>24-hour hackathon to build innovative solutions</p>
+                <div class="event-details">
+                  <span>Prize: ₹50,000</span>
+                  <span>Team: 2-4 members</span>
+                </div>
+                <button class="register-btn">Register Now</button>
+              </div>
+            </div>
+            <div class="event-card">
+              <div class="event-image">
+                <img src="./images/3.jpg" alt="Coding" />
+              </div>
+              <div class="event-content">
+                <h3>Debug Master</h3>
+                <p>Find and fix bugs in complex code</p>
+                <div class="event-details">
+                  <span>Prize: ₹30,000</span>
+                  <span>Team: Individual</span>
+                </div>
+                <button class="register-btn">Register Now</button>
+              </div>
+            </div>
+          
+        
+      </section>
+
+      <section id="workshop" class="event-section">
+        <h2>WorkShops</h2>
+        <div class="events-grid">
+            <div class="event-card">
+              <div class="event-image">
+                <img src="./images/4.jpg" alt="Hackathon" />
+              </div>
+              <div class="event-content">
+                <h3>Code Marathon</h3>
+                <p>24-hour hackathon to build innovative solutions</p>
+                <div class="event-details">
+                  <span>Prize: ₹50,000</span>
+                  <span>Team: 2-4 members</span>
+                </div>
+                <button class="register-btn">Register Now</button>
+              </div>
+            </div>
+            <div class="event-card">
+              <div class="event-image">
+                <img src="./images/3.jpg" alt="Coding" />
+              </div>
+              <div class="event-content">
+                <h3>Debug Master</h3>
+                <p>Find and fix bugs in complex code</p>
+                <div class="event-details">
+                  <span>Prize: ₹30,000</span>
+                  <span>Team: Individual</span>
+                </div>
+                <button class="register-btn">Register Now</button>
+              </div>
+            </div>
+        </div>
+
+
+          <!-- Add 5 more non-technical events similarly -->
+
+          <div class="events-grid">
+            <div class="event-card">
+              <div class="event-image">
+                <img src="./images/4.jpg" alt="Hackathon" />
+              </div>
+              <div class="event-content">
+                <h3>Code Marathon</h3>
+                <p>24-hour hackathon to build innovative solutions</p>
+                <div class="event-details">
+                  <span>Prize: ₹50,000</span>
+                  <span>Team: 2-4 members</span>
+                </div>
+                <button class="register-btn">Register Now</button>
+              </div>
+            </div>
+            <div class="event-card">
+              <div class="event-image">
+                <img src="./images/3.jpg" alt="Coding" />
+              </div>
+              <div class="event-content">
+                <h3>Debug Master</h3>
+                <p>Find and fix bugs in complex code</p>
+                <div class="event-details">
+                  <span>Prize: ₹30,000</span>
+                  <span>Team: Individual</span>
+                </div>
+                <button class="register-btn">Register Now</button>
+              </div>
+            </div>
+      </section>
+
+      <script src="js/navbar.js"></script>
+    </div>
+  </body>
+</html>

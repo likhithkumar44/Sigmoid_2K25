@@ -1,0 +1,103 @@
+/* Accommodation Page Styles */
+body, html {
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+    height: 90vh;
+}
+.accommodation-container {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.section-title {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 30px auto;
+    margin-bottom: 80px;
+}
+
+/* Accommodation Details */
+.accommodation-details {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 80px;
+}
+
+.detail-card {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.detail-card h3 {
+    align-self: center;
+    font-size: 1.8rem;
+    margin: 0 auto;
+}
+
+.detail-card p {
+    /* position: absolute;
+    bottom: 5px;
+    left: auto; */
+    align-self: center;
+    font-size: 1.2rem;
+    opacity: 0.8;
+    margin-top: 10px;
+}
+
+/* Register Section */
+.register-section {
+    margin-top: 50px;
+}
+
+.register-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.register-btn:hover {
+    background-color: #ff8e53;
+}
+
+.register-section p {
+    /* margin-top: 20px; */
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .accommodation-details {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: -5px;
+        margin-left: 27px;
+    }
+    
+    .section-title {
+        font-size: 2.5rem;
+        margin-bottom: 70px;
+        margin-top: 10px;
+    }
+    
+    .register-section p {
+        font-size: 1rem;
+    }
+}
