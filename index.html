@@ -10,6 +10,12 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/navbar.css">
 	<script src="js/app.js" defer></script>
+	<script>
+		if (!sessionStorage.getItem("preloaderShown")){
+			sessionStorage.setItem("preloaderShown","true");
+			window.location.href="loader.html"
+		}
+	</script>
 </head>
 
 <body>
