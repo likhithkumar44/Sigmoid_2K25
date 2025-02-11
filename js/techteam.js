@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     /** 🏆 Tech Team Members */
     const techMembers = [
         { 
-            name: "Gowtham Sree", 
+            name: "      Gowtham Sree", 
             role: "Developer", 
             img: "./images/gowtham2.jpg", 
             instagram: "https://www.instagram.com/gowtham__2303/", 
