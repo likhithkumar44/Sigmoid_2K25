@@ -42,3 +42,9 @@ window.onfocus = function () {
 window.onblur = function () {
 	audio.pause();
 }
+
+let reg = document.querySelector('#register');
+function redirect_to_register(){
+	window.location.href='registration.html';
+}
+reg.addEventListener('click',redirect_to_register)

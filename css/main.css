@@ -134,7 +134,7 @@ video.frame-media_right {
 
 .sound-btn {
   position: fixed;
-  bottom: 9vh;
+  bottom: 15vh;
   right: 9vw;
   cursor: pointer;
   width: 24px;
@@ -150,6 +150,6 @@ video.frame-media_right {
 /* Mobile styles */
 @media (max-width: 768px) {
   body{
-    min-height: 400vh;
+    min-height: 485vh;
   }
 }
