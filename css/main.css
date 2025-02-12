@@ -149,7 +149,7 @@ video.frame-media_right {
 
 /* Mobile styles */
 @media (max-width: 768px) {
-  body{
+  #index_body{
     min-height: 540vh;
   }
   #pc_reg{
