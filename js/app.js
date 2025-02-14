@@ -42,5 +42,3 @@ window.onfocus = function () {
 window.onblur = function () {
 	audio.pause();
 }
-
-
