@@ -134,7 +134,7 @@ video.frame-media_right {
 
 .sound-btn {
   position: fixed;
-  bottom: 15vh;
+  bottom: 9vh;
   right: 9vw;
   cursor: pointer;
   width: 24px;
