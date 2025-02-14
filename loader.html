@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sigmoid 2K25</title>
     <style>
+        .sound-btn {
+            position: fixed;
+            bottom: 9vh;
+            right: 9vw;
+            cursor: pointer;
+            width: 24px;
+            transition: .25s ease;
+            z-index: 100;
+        }
+        
+        .sound-btn.paused {
+            opacity: .25;
+            z-index: 100;
+        }
+        
         * {
             margin: 0;
             padding: 0;
@@ -191,6 +206,10 @@
         </div>
     </div>
 
+    <img class="sound-btn" src="images/sound.gif" alt="button">
+    <audio class="audio" src="media/ambient2.mp3" loop autoplay></audio>
+
+    
     <script>
         // Create animated tech lines
         const techBackground = document.querySelector('.tech-background');
@@ -284,6 +303,23 @@
                 box.remove();
             }, 1500);
         }, 300);
+    </script>
+    <script>
+        let soundButton = document.querySelector('.sound-btn'),
+		audio = document.querySelector('.audio')
+
+        soundButton.addEventListener('click', e => {
+	        soundButton.classList.toggle('paused');
+	        audio.paused ? audio.play() : audio.pause();
+        });
+
+        window.onfocus = function () {
+        	soundButton.classList.contains('paused') ? audio.pause() : audio.play();
+        }
+        
+        window.onblur = function () {
+        	audio.pause();
+}
     </script>
 </body>
 </html>

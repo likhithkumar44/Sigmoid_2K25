@@ -184,7 +184,7 @@ body, html {
     }
 }
 
-.sound-btn {
+/* .sound-btn {
 	position: fixed;
 	bottom: 9vh;
 	right: 9vw;
@@ -195,4 +195,4 @@ body, html {
 
 .sound-btn.paused {
 	opacity: .25;
-}
+} */
