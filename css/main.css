@@ -145,6 +145,29 @@ video.frame-media_right {
   opacity: 0.25;
 }
 
+.register--btn {
+  background: linear-gradient(45deg, #ff3366, #ff6b6b);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
+  position: fixed;
+  bottom: 8vh;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* .register--btn {
+  box-shadow: 0 0 40px rgba(0, 123, 255, 0.7);
+}
+
+.register--btn:hover {
+  box-shadow: 0 0 40px rgba(0, 123, 255, 0.7);
+} */
 
 
 /* Mobile styles */
