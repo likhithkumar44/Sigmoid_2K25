@@ -1,13 +1,13 @@
 
 
-// Reveal animations on scroll
+//Reveal animations on scroll
 function reveal() {
     const reveals = document.querySelectorAll('.reveal');
 
     reveals.forEach(element => {
         const windowHeight = window.innerHeight;
         const elementTop = element.getBoundingClientRect().top;
-        const elementVisible = 150;
+         const elementVisible = 150;
 
         if (elementTop < windowHeight - elementVisible) {
             element.classList.add('active');
@@ -16,27 +16,27 @@ function reveal() {
 }
 
 // Animate numbers
-function animateNumbers() {
-    const numberElements = document.querySelectorAll('.number');
+// function animateNumbers() {
+//     const numberElements = document.querySelectorAll('.number');
 
-    numberElements.forEach(element => {
-        const target = parseInt(element.getAttribute('data-target'));
-        const increment = target / 100;
-        let current = 0;
+//     numberElements.forEach(element => {
+//         const target = parseInt(element.getAttribute('data-target'));
+//         const increment = target / 100;
+//         let current = 0;
 
-        const updateNumber = () => {
-            if (current < target) {
-                current += increment;
-                element.textContent = Math.round(current);
-                requestAnimationFrame(updateNumber);
-            } else {
-                element.textContent = target;
-            }
-        };
+//         const updateNumber = () => {
+//             if (current < target) {
+//                 current += increment;
+//                 element.textContent = Math.round(current);
+//                 requestAnimationFrame(updateNumber);
+//             } else {
+//                 element.textContent = target;
+//             }
+//         };
 
-        updateNumber();
-    });
-}
+//         updateNumber();
+//     });
+// }
 
 // Event listeners
 window.addEventListener('scroll', reveal);

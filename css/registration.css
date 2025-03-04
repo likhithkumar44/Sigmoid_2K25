@@ -29,6 +29,7 @@ body, html {
     font-size: 4rem;
     margin-bottom: 1rem;
     font-weight: 300;
+    color: #0EA5E9;
 }
 
 .subtitle {
@@ -64,12 +65,13 @@ body, html {
     font-size: 2rem;
     margin-bottom: 15px;
     font-weight: 300;
+    color: #3845f7;
 }
 
 .pass-price {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     margin: 20px 0;
-    color: #ff3366;
+    color: rgb(229, 211, 109);
 }
 
 .pass-features {
@@ -84,18 +86,20 @@ body, html {
 }
 
 .register-btn {
-    background: linear-gradient(45deg, #ff3366, #ff6b6b);
-    color: white;
+    background: linear-gradient(45deg, #f20404, #0b0000);
+    color: rgb(246, 241, 241);
     border: none;
     padding: 12px 30px;
     border-radius: 25px;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     cursor: pointer;
     transition: transform 0.3s ease;
+    border: 1px solid white;
 }
 
 .register-btn:hover {
     transform: scale(1.05);
+    box-shadow: 0 0 90px rgb(25, 91, 255);
 }
 
 /* Rules Section */
@@ -132,7 +136,7 @@ body, html {
 }
 
 .rule-card h3 {
-    color: #ff3366;
+    color: #1EAEDB;
     margin-bottom: 15px;
     font-weight: 300;
 }

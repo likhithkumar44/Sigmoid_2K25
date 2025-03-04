@@ -31,20 +31,18 @@ document.querySelectorAll('.register-btn').forEach(button => {
 
 
 
-// Audio
+let soundButton = document.querySelector('.sound-btn'),
+		audio = document.querySelector('.audio')
 
-// let soundButton = document.querySelector('.sound-btn'),
-// 		audio = document.querySelector('.audio')
+soundButton.addEventListener('click', e => {
+	soundButton.classList.toggle('paused');
+	audio.paused ? audio.play() : audio.pause();
+});
 
-// soundButton.addEventListener('click', e => {
-// 	soundButton.classList.toggle('paused');
-// 	audio.paused ? audio.play() : audio.pause();
-// });
+window.onfocus = function () {
+	soundButton.classList.contains('paused') ? audio.pause() : audio.play();
+}
 
-// window.onfocus = function () {
-// 	soundButton.classList.contains('paused') ? audio.pause() : audio.play();
-// }
-
-// window.onblur = function () {
-// 	audio.pause();
-// }
+window.onblur = function () {
+	audio.pause();
+}

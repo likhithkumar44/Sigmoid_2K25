@@ -30,6 +30,7 @@ body, html {
     margin-bottom: 80px;
 }
 
+
 .detail-card {
     position: relative;
     background-color: rgba(255, 255, 255, 0.05);
@@ -38,12 +39,14 @@ body, html {
     width: 300px;
     text-align: center;
 }
-
 .detail-card h3 {
-    align-self: center;
-    font-size: 1.8rem;
-    margin: 0 auto;
+    text-align: center; /* Centers text */
+    font-size: 2rem; /* Increases font size */
+    font-weight: bold; /* Makes text bolder */
+    color: yellow; /* Sets text color to yellow */
 }
+
+
 
 .detail-card p {
     /* position: absolute;
@@ -63,17 +66,19 @@ body, html {
 .register-btn {
     padding: 15px 30px;
     font-size: 1.2rem;
-    background-color: #ff6b6b;
+    background: linear-gradient(45deg, #0EA5E9, #1EAEDB);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-bottom: 20px;
+    border: 1px solid white;
 }
 
 .register-btn:hover {
     background-color: #ff8e53;
+    box-shadow: 0 0 90px rgb(0, 94, 255);
 }
 
 .register-section p {
@@ -99,5 +104,30 @@ body, html {
     
     .register-section p {
         font-size: 1rem;
+    }
+}
+
+
+.accommodation-info {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 40px auto;
+    width: 70%;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.accommodation-info h2 {
+    color: orange;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .accommodation-info {
+        width: 90%;
+        padding: 15px;
     }
 }

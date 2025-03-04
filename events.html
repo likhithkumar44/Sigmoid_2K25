@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Events - Sigmoid</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon" style="margin-top: -20px;">
+
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/events.css" />
     <link rel="stylesheet" href="css/navbar.css" />
@@ -20,6 +22,7 @@
   <body>
     <nav class="navbar">
         <div class="navbar-brand">
+          <img src="images/logo.png" alt="logo" class="logo">
             <h1>Sigmoid</h1>
         </div>
         <ul class="navbar-nav">
@@ -30,6 +33,7 @@
             <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
             <li class="nav-item"><a href="contact.html" class="nav-link">Contact Us</a></li>
             <li class="nav-item"><a href="techteam.html" class="nav-link">Our Team</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
         </ul>
         <div class="hamburger">
             <span></span>
@@ -40,7 +44,7 @@
 
     <div class="events-container">
       <section class="events-hero">
-        <h1>Sigmoid Events</h1>
+        <h1 style="color: #0EA5E9;">Sigmoid Events</h1>
         <p>Explore our diverse range of events and competitions</p>
       </section>
 
@@ -51,38 +55,37 @@
         <button class="category-btn" data-category="nontech">
           Non-Technical Events
         </button>
-        <button class="category-btn" data-category="workshop" id="workshops">WorkShops</button>
+        <button class="category-btn" data-category="workshop" id="workshops">
+          Live WorkShops
+        </button>
+        <button class="category-btn" data-category="spotevents" id="spot-events">
+          E-Sports
+        </button>
       </div>
 
+
+      <!--              TECHNICAL EVENTS                 -->
+
       <section id="tech" class="event-section active">
-        <h2>Technical Events</h2>
         <div class="events-grid">
           <div class="event-card">
             <div class="event-image">
-              <img src="./images/4.jpg" alt="Hackathon" />
+              <img src="./images/11.png" alt="Techfusion" />
             </div>
             <div class="event-content">
-              <h3>Code Marathon</h3>
-              <p>24-hour hackathon to build innovative solutions</p>
-              <div class="event-details">
-                <span>Prize: ₹50,000</span>
-                <span>Team: 2-4 members</span>
-              </div>
-              <button class="register-btn">Register Now</button>
+              <h3>Techfusion</h3>
+              <p>A Techfusion is an event where participants submit and present research papers for evaluation..</p>
+              <a href="https://drive.google.com/file/d/1cEYVxsPqrHrdAf7FJnepJ6i4CPFsCr8J/view?usp=drive_link" download="" target="_blank"><button class="register-btn">Download Details</button></a>
             </div>
           </div>
           <div class="event-card">
             <div class="event-image">
-              <img src="./images/3.jpg" alt="Coding" />
+              <img src="./images/12.png" alt="Posterize" />
             </div>
             <div class="event-content">
-              <h3>Debug Master</h3>
-              <p>Find and fix bugs in complex code</p>
-              <div class="event-details">
-                <span>Prize: ₹30,000</span>
-                <span>Team: Individual</span>
-              </div>
-              <button class="register-btn">Register Now</button>
+              <h3>Posterize</h3>
+              <p>A poster presentation is an event where participants display and present their research on a visual poster..</p>
+              <a href="https://drive.google.com/file/d/1yiX1RVwqEtnjDkOYRYLnvshDnQfYHqcZ/view?usp=drive_link" download="" target="_blank"><button class="register-btn">Download Details</button></a>
             </div>
           </div>
         </div>
@@ -94,65 +97,81 @@
         <div class="events-grid">
             <div class="event-card">
               <div class="event-image">
-                <img src="./images/4.jpg" alt="Hackathon" />
+                <img src="./images/9.png" alt="Innovista" />
               </div>
               <div class="event-content">
-                <h3>Code Marathon</h3>
-                <p>24-hour hackathon to build innovative solutions</p>
-                <div class="event-details">
-                  <span>Prize: ₹50,000</span>
-                  <span>Team: 2-4 members</span>
-                </div>
-                <button class="register-btn">Register Now</button>
+                <h3>Innovista</h3>
+                <p>Innovista is an event where participants display innovative DIY projects and showcase technical creativity..</p>
+                <a href="https://drive.google.com/file/d/1hCuZMXhhU0_DY6Jzc2S6_fSNWJOPkvh1/view?usp=drive_link" download="" target="_blank"><button class="register-btn">Download Details</button></a>
               </div>
             </div>
             <div class="event-card">
               <div class="event-image">
-                <img src="./images/3.jpg" alt="Coding" />
+                <img src="./images/10.png" alt="Techcrix" />
               </div>
               <div class="event-content">
-                <h3>Debug Master</h3>
-                <p>Find and fix bugs in complex code</p>
-                <div class="event-details">
-                  <span>Prize: ₹30,000</span>
-                  <span>Team: Individual</span>
-                </div>
-                <button class="register-btn">Register Now</button>
+                <h3>Techcrix</h3>
+                <p>TECHCRIX is an event where participants solve circuit questions and build models to test their skills..</p>
+                <a href="https://drive.google.com/file/d/1BL5BZhNhdt1ozqrUtjfNVkd52_EiJ4K3/view?usp=drive_link" download="" target="_blank"><button class="register-btn">Download Details</button></a>
               </div>
             </div>
+        </div>
+
+        <div class="events-grid">
+          <div class="event-card">
+            <div class="event-image">
+              <img src="./images/14.png" alt="Quiztronics" />
+            </div>
+            <div class="event-content">
+              <div>
+                <h3>Quiztronics</h3>
+              </div>
+              <p>ElectroQuiz is a three-round quiz that challenges participants on electronics, current affairs, and emerging technologies, with scores represented as "Bits."</p>
+              <a href="https://drive.google.com/file/d/15D6W6GZ9kRfd8Aq95yxI4vCamMFDaq68/view?usp=drivesdk" download="" target="_blank"><button class="register-btn">Download Details</button></a>
+            </div>
+          </div>
+          <div class="event-card">
+            <div class="event-image">
+              <img src="./images/13.png" alt="CodeVerse" />
+            </div>
+            <div class="event-content">
+              <h3>CodeVerse</h3>
+              <p>A contest with competetive coding that challenges programming to test their algorithmic thinking and coding skills.</p>
+              <a href="https://drive.google.com/file/d/1TPYeosmI5mOEm9cf8RacTMLbG35TcXrG/view?usp=drive_link"download="" target="_blank"><button class="register-btn">Download Details</button></a>
+            </div>
+          </div>
+        </div>
 
 
       </section>
 
+      
+
+<!--         NON-TECHNICAL EVENTS              -->
+
+
+
       <section id="nontech" class="event-section">
-        <h2>Non-Technical Events</h2>
         <div class="events-grid">
             <div class="event-card">
               <div class="event-image">
-                <img src="./images/4.jpg" alt="Hackathon" />
+                <img src="./images/16.png" alt="Click Fest" />
               </div>
               <div class="event-content">
-                <h3>Code Marathon</h3>
-                <p>24-hour hackathon to build innovative solutions</p>
-                <div class="event-details">
-                  <span>Prize: ₹50,000</span>
-                  <span>Team: 2-4 members</span>
-                </div>
-                <button class="register-btn">Register Now</button>
+                <h3>Click Fest</h3>
+                <p>CLICK FEST is a photography contest where participants capture creative images based on themes, showcasing technical skills and unique perspectives of daily life.</p>
+                <a href="https://drive.google.com/file/d/1aiJ3boBfRFws6evA1JrjwJSbhwuL06q-/view?usp=drive_link" download="" target="_blank"><button class="register-btn">Download Details</button></a>
               </div>
             </div>
+
             <div class="event-card">
               <div class="event-image">
-                <img src="./images/3.jpg" alt="Coding" />
+                <img src="./images/17.png" alt="DumbCharades" />
               </div>
               <div class="event-content">
-                <h3>Debug Master</h3>
-                <p>Find and fix bugs in complex code</p>
-                <div class="event-details">
-                  <span>Prize: ₹30,000</span>
-                  <span>Team: Individual</span>
-                </div>
-                <button class="register-btn">Register Now</button>
+                <h3>DumbCharades and Pictionary</h3>
+                <p>DUMDCHARADES AND PICTIONARY is a two-level game featuring Dumbcharades and Pictionary, testing acting, observation, and drawing skills.</p>
+                <a href="https://drive.google.com/file/d/1fhV91g3DY43lWF4pmjAQbwkRWGM2rZ2o/view?usp=drive_link" download="" target="_blank"><button class="register-btn">Download Details</button></a>
               </div>
             </div>
         </div>
@@ -163,68 +182,62 @@
           <div class="events-grid">
             <div class="event-card">
               <div class="event-image">
-                <img src="./images/4.jpg" alt="Hackathon" />
+                <img src="./images/18.png" alt="kims game " />
               </div>
               <div class="event-content">
-                <h3>Code Marathon</h3>
-                <p>24-hour hackathon to build innovative solutions</p>
-                <div class="event-details">
-                  <span>Prize: ₹50,000</span>
-                  <span>Team: 2-4 members</span>
-                </div>
-                <button class="register-btn">Register Now</button>
+                <h3>Kim's Game</h3>
+                <p>KIM'S GAME is a 3-level memory game where participants identify missing or misplaced objects to advance through rounds.</p>
+                <a href="https://drive.google.com/file/d/1YSQs76a8M3nZC7ZEpQsG3FKhultd2flQ/view?usp=drive_link" download="" target="_blank"><button class="register-btn">Download Details</button></a>
               </div>
             </div>
             <div class="event-card">
               <div class="event-image">
-                <img src="./images/3.jpg" alt="Coding" />
+                <img src="./images/19.png" alt="GuessBusters" />
               </div>
+
               <div class="event-content">
-                <h3>Debug Master</h3>
-                <p>Find and fix bugs in complex code</p>
-                <div class="event-details">
-                  <span>Prize: ₹30,000</span>
-                  <span>Team: Individual</span>
-                </div>
-                <button class="register-btn">Register Now</button>
+                <h3>Guess Busters</h3>
+                <p>Guess Busters is a two-round game where players guess phrases and movie-related clues.</p>
+                <a href="https://drive.google.com/file/d/1vVMIFN9VRIDUr6DvhLQ5N6b5vhrzQONq/view?usp=drive_link" download="" target="_blank"><button class="register-btn">Download Details</button></a>
               </div>
             </div>
           
         
       </section>
 
+
+
+     <!--           WORKSHOP            -->
+
+
       <section id="workshop" class="event-section">
-        <h2>WorkShops</h2>
         <div class="events-grid">
             <div class="event-card">
               <div class="event-image">
-                <img src="./images/4.jpg" alt="Hackathon" />
+                <img src="./images/work.png" alt="Hackathon" />
               </div>
               <div class="event-content">
-                <h3>Code Marathon</h3>
-                <p>24-hour hackathon to build innovative solutions</p>
-                <div class="event-details">
-                  <span>Prize: ₹50,000</span>
-                  <span>Team: 2-4 members</span>
-                </div>
-                <button class="register-btn">Register Now</button>
+                <h3>ISRO workshop</h3>
+                <p>ISRO Seminar on Rockets led by an ISRO scientist, focusing on rocket technology and space exploration.</p>
+                <a href="workshop-details.html" target="_blank">
+                  <button class="register-btn">Download Details</button>
+                </a>
               </div>
             </div>
             <div class="event-card">
               <div class="event-image">
-                <img src="./images/3.jpg" alt="Coding" />
+                <img src="./images/work.png" alt="Coding" />
               </div>
               <div class="event-content">
-                <h3>Debug Master</h3>
-                <p>Find and fix bugs in complex code</p>
-                <div class="event-details">
-                  <span>Prize: ₹30,000</span>
-                  <span>Team: Individual</span>
-                </div>
-                <button class="register-btn">Register Now</button>
+                <h3>CLoud technologies</h3>
+                <p>Cloud Technologies Session by Ignite Club , focused on cloud computing solutions, offering insights into cloud infrastructure, services, and trends.</p>
+                <a href="workshop-details.html" target="_blank">
+                  <button class="register-btn">Download Details</button>
+                </a>
               </div>
             </div>
         </div>
+
 
 
           <!-- Add 5 more non-technical events similarly -->
@@ -232,33 +245,79 @@
           <div class="events-grid">
             <div class="event-card">
               <div class="event-image">
-                <img src="./images/4.jpg" alt="Hackathon" />
+                <img src="./images/work.png" alt="Hackathon" />
               </div>
               <div class="event-content">
-                <h3>Code Marathon</h3>
-                <p>24-hour hackathon to build innovative solutions</p>
-                <div class="event-details">
-                  <span>Prize: ₹50,000</span>
-                  <span>Team: 2-4 members</span>
-                </div>
-                <button class="register-btn">Register Now</button>
+                <h3>Iot Workshop</h3>
+                <p>IoT Workshop is a hands-on session where participants learn about Internet of Things (IoT) technologies, devices, and applications.</p>
+                <a href="workshop-details.html" target="_blank">
+                  <button class="register-btn">Download Details</button>
+                </a>
+                
               </div>
             </div>
             <div class="event-card">
               <div class="event-image">
-                <img src="./images/3.jpg" alt="Coding" />
+                <img src="./images/work.png" alt="Coding" />
               </div>
               <div class="event-content">
-                <h3>Debug Master</h3>
-                <p>Find and fix bugs in complex code</p>
-                <div class="event-details">
-                  <span>Prize: ₹30,000</span>
-                  <span>Team: Individual</span>
-                </div>
-                <button class="register-btn">Register Now</button>
+                <h3>Robotics Workshop</h3>
+                <p>Robotics Workshop is a hands-on session where participants learn to design, build, and program robots.</p>
+                <a href="workshop-details.html" target="_blank">
+                  <button class="register-btn">Download Details</button>
+                </a>
               </div>
             </div>
       </section>
+
+      <section id="spotevents" class="event-section">
+        <div class="events-grid card-container">
+          <div class="cards" onclick="flipCard(this)">
+            <div class="front">
+              <img src="images/ff-1.jpeg" alt="Hackathon" />
+            </div>
+            <div class="back">
+              <h3>FREE FIRE</h3>
+              <p><strong>Get ready for an adrenaline-pumping experience at our Free Fire Esports Tournament!</strong></p>
+          
+              <p class="price">Prize Money: INR 5000</p>
+              <br>
+              <p style="text-decoration: underline; font-weight: bold;">Registration Fee</p>
+              <p>There will be a registration fee for both solo and squad entries. Further details will be shared on our Instagram.</p>
+              <br>
+              <p style="text-decoration: underline; font-weight: bold;">Contact Us</p>
+              <p>Y.Ram Harshan</p>
+              <p>+91 8328506316</p>
+              <br>
+              <p style="font-weight: bold;">Follow our Instagram for more updates!</p>
+          </div>
+          
+          </div>
+          <div class="cards" onclick="flipCard(this)">
+            <div class="front">
+                <img src="images/pg-1 (1).jpeg" alt="Hackathon" />
+            </div>
+            <div class="back">
+                <h3>BGMI</h3>
+                <p><strong>Prepare for an epic showdown in the BGMI Esports Tournament!</strong>
+                </p>
+
+                <p class="price">Prize Money: INR 5000</p>
+                <br>
+                <p style="text-decoration: underline; font-weight: bold;">Registration Fee</p>
+                <p>There will be a registration fee for both solo and squad entries. Further details will be shared on our Instagram.</p>
+                <br>
+                <p style="text-decoration: underline; font-weight: bold;">Contact Us</p>
+                <p>P.Likhith Kumar</p>
+                <p>+91 9912631190</p>
+                <br>
+                <p style="font-weight: bold;">Follow our Instagram for more updates!</p>
+            </div>
+        </div>
+        
+        </div>
+      </section>
+
 
       <script src="js/navbar.js"></script>
     </div>
