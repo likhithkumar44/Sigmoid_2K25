@@ -145,7 +145,6 @@ document.addEventListener("DOMContentLoaded", () => {
             event: "GUESS BUSTERS",
             members: [
                 "S.Shaheer Shaik",
-                "V.Aswini",
                 "P.Likitha",
                 "B.Vinusha",
                 "V.Kavya Sree"
