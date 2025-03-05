@@ -50,8 +50,13 @@
     width: 330px;
     transition: transform 0.3s ease;
     text-align: center;
-    margin-inline: 75px;
 }
+@media (min-width: 768px) {
+    .contact-card {
+        margin-inline: 75px;
+    }
+}
+
 .contact-card h3{
     align-self: center;
     margin: auto;
