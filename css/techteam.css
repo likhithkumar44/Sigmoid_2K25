@@ -190,6 +190,13 @@ body {
 .footer a:hover {
     color: #ffcc00;
 }
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -211,5 +218,15 @@ body {
     .support-text {
         padding: 20px;
         margin: 30px 10px;
+    }
+}
+.add{
+    width: 100%;
+    /* margin-right: auto; */
+}
+@media (min-width: 768px) {
+    .add{
+        margin-left: -39px;
+
     }
 }
