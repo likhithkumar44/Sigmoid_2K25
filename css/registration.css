@@ -189,3 +189,14 @@ body, html {
     text-align: center;
     padding: 10px 200px 0px 200px;
 }
+@media (max-width: 768px) {
+    .text {
+        padding: 10px 20px 0px 20px;
+    }
+    #text1{
+        margin-top: -15px;
+    }
+    #text2{
+        margin-bottom: 150px;
+    }
+}
