@@ -50,9 +50,9 @@
           <p class="pass-features">Enter the tech world digitally. 
             Access to one of your <span style="color: #0abaff;">favourite event</span> from the paid trio: <span style="color: #0abaff;">Techfusion</span>, 
             <span style="color: #0abaff;">Posterize</span>, <span style="color: #0abaff;">Innovista</span> and access to one of your favourite <span style="color: #0abaff;">Workshop.</span></p>
-          <a href="https://rzp.io/rzp/epasss">
+          <!-- <a href="https://rzp.io/rzp/epasss"> -->
           <button class="register-btn">Register Now</button>
-          </a>
+          <!-- </a> -->
         </div>
 
 
@@ -62,9 +62,9 @@
           <div class="pass-price"><s>₹400</s> ₹350</div>
           <p class="pass-features">Unlock the world of Sigmoid with
              the Elite pass, a base pass to experience Sigmoid, your access ticket to <span style="color: #0abaff;">All Non-Tech Events</span>.</p>
-          <a href="https://pages.razorpay.com/elite-pass">
+          <!-- <a href="https://pages.razorpay.com/elite-pass"> -->
           <button class="register-btn" style="margin-top: 60px;">Register Now</button>
-          </a>
+          <!-- </a> -->
         </div>
 
         <div class="pass-card">
@@ -74,9 +74,9 @@
             Supreme Pass. Access to <span style="color: #0abaff;">One Event</span> from the paid trio: <span style="color: #0abaff;">Techfusion</span>, 
             <span style="color: #0abaff;">Posterize</span>, <span style="color: #0abaff;">Innovista</span>, a <span style="color: #0abaff;">Free Tech Trio Bundle</span>, 
             and <span style="color: #0abaff;">All Non-Tech Events</span>.</p>
-          <a href="https://pages.razorpay.com/supreme-pass">
+          <!-- <a href="https://pages.razorpay.com/supreme-pass"> -->
           <button class="register-btn">Register Now</button>
-          </a>
+          <!-- </a> -->
         </div>
 
         <div class="pass-card">
@@ -86,9 +86,9 @@
             Access to your <span style="color: #0abaff;">Two favourites</span> from the paid trio: <span style="color: #0abaff;">Techfusion</span>, 
             <span style="color: #0abaff;">Posterize</span>, <span style="color: #0abaff;">Innovista</span>, a <span style="color: #0abaff;">Free Tech Trio Bundle</span>, 
             and <span style="color: #0abaff;">All Non-Tech Events</span>.</p>
-          <a href="https://pages.razorpay.com/prime-pass">
+          <!-- <a href="https://pages.razorpay.com/prime-pass"> -->
           <button class="register-btn">Register Now</button>
-          </a>
+          <!-- </a> -->
         </div>
 
         <div class="pass-card">
@@ -96,9 +96,9 @@
           <div class="pass-price"><s>₹550</s> ₹500</div>
           <p class="pass-features">Embard on an unparalleled adventure with the Ultimate Pass. 
             Your ticket to <span style="color: #0abaff;">All the Tech and Non-Tech Events</span>.</p>
-          <a href="https://pages.razorpay.com/ultimate-pass">
+          <!-- <a href="https://pages.razorpay.com/ultimate-pass"> -->
           <button class="register-btn" style="margin-top: 60px;">Register Now</button>
-          </a>
+          <!-- </a> -->
         </div>
       </section>
 
@@ -161,9 +161,16 @@
       </section>
     </div>
 
-    <!-- <img class="sound-btn" src="images/sound.gif" alt="button" />
+    <script>
+      let btn=document.querySelectorAll('.register-btn');
+      btn.forEach((button)=>{
+        button.addEventListener('click',()=>{
+          alert('Registration are closed contact HelpDesk for more information');
+        })
+      })
+    </script>
 
-    <audio class="audio" src="media/ambient2.mp3" loop autoplay></audio> -->
+
 
     <script src="js/registration.js"></script>
     <script src="js/navbar.js"></script>
