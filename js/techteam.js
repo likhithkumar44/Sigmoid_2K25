@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
             name: "Likhith Kumar", 
             role: "Backend Developer", 
             img: "./images/likhith.jpg", 
-            instagram: "https://www.instagram.com/gowtham__2303/", 
+            instagram: "https://www.instagram.com/likhith_kumar__p/", 
             email: "johndoe@example.com" 
         },
         { 
