@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
             email: "johndoe@example.com" 
         },
         { 
-            name: "Likith Kumar", 
+            name: "Likhith Kumar", 
             role: "Backend Developer", 
             img: "./images/likhith.jpg", 
             instagram: "https://www.instagram.com/gowtham__2303/", 
