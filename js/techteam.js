@@ -6,14 +6,14 @@ document.addEventListener("DOMContentLoaded", () => {
             role: "Developer", 
             img: "./images/Gowtham.jpg", 
             instagram: "https://www.instagram.com/gowtham__2303/", 
-            email: "johndoe@example.com" 
+            email: "gowthamt3060@gmail.com" 
         },
         { 
             name: "Likhith Kumar", 
             role: "Backend Developer", 
             img: "./images/likhith.jpg", 
             instagram: "https://www.instagram.com/likhith_kumar__p/", 
-            email: "johndoe@example.com" 
+            email: "likhithkumar44@gmail.com" 
         },
         { 
             name: "Mohan Kumar", 
